@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <script src="../JS/scripts.js" defer> </script>
+    <title>Formulário JS</title>
+</head>
+<body>
+    <header>
+        <img src="../Img/Logo.png" id="logo" alt="Logo CliniVille"> 
+        <h1>CliniVille</h1>
+    </header>
+
+<div id="div1">
+
+    <form action="#" method="POST" id="formcad">
+
+        <p id="p1">Dados pessoais e de contato</p>
+
+        <p id="p2">Agendar consulta</p>
+
+        <div id="form1">
+
+        <label for="nome">Nome Completo*:</label>
+        <input type="text" name="nome" id="nome" class="input2" placeholder="Ex:Mateus Tavares..." pattern="^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" required/>
+
+        <label for="nasc">Data de nascimento*:</label>
+        <input type="date" name="nasc" id="nasc" class="input2" required />
+
+        <label for="cpf">CPF*:</label>
+        <input type="text" name="cpf" id="cpf" class="input2" minlength="14" maxlength="14" placeholder="Ex:111.111.111-11" required/>
+
+        <label for="tel">Telefone*:</label>
+        <input type="tel" name="tel" id="tel" class="input2" minlength="14" maxlength="15" placeholder="Ex:(47) 99999-9999" required/>
+
+        <label for="email">E-mail*:</label>
+        <input type="email" name="email" id="email" class="input2" placeholder="Ex:mateus@gmail.com" pattern="^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$" required/>
+
+        <label for="senha">Senha*:</label>
+        <input type="password" name="senha" id="senha" class="input2" placeholder="Ex:Aaaaaa8*" minlength="8" maxlength="12" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" required/>
+
+        <label>Gênero*:</label> 
+        <div class="resposta">
+        <label>
+        <input type="radio" name="gen" value="masc" required />
+        Masculino
+        </label>
+        <label>
+        <input type="radio" name="gen" value="fem" />
+        Feminino
+        </label>
+        <label>
+        <input type="radio" name="gen" value="out"  />
+        Outro 
+        </label>
+        </div>
+
+        <label for="estado">Estado Civil*:</label>
+	    <select id="estado" name="estado" required>
+            <option value="" disabled selected>Nenhum</option>
+		    <option value="solt">Solteiro</option>
+		    <option value="casa">Casado</option>
+		    <option value="viuv">Viúvo</option>
+	    </select>
+
+        <label for="end">Endereço*:</label>
+        <input type="text" name="end" id="end" class="input2" placeholder="Ex:Rua Fatima - N°89" required/>
+
+        <label for="bair">Bairro*:</label>
+        <input type="text" name="bair" id="bair" class="input2" placeholder="Ex:Fatima" required/>
+
+        </div>
+
+        <div id="form2">
+
+        <label>Possui alguma doença*:</label> 
+        <div class="resposta">
+        <label>
+        <input type="radio" name="doenca" value="sim" id="s" class="input2" required/>
+        Sim
+        </label>
+        <label>
+        <input type="radio" name="doenca" value="nao" id="n" class="input2" />
+        Não
+        </label>
+        </div>
+
+        <label for="doen">Se sim, qual?</label>
+        <input type="text" name="doen" id="doen" class="input2" placeholder="Ex:Sinusite, Hipertensão, ..." />
+
+        <label id="sin">Nos últimos dias, teve algum desses sintomas?</label>
+        <div id="sintoma1">
+        <label>
+            <input type="checkbox" name="sintoma" id="tosse" value="tosse"/>
+            Tosse
+        </label>
+        <label>
+            <input type="checkbox" name="sintoma" id="DorG" value="DorG"/>
+            Dor de Garganta
+        </label>
+        <label>
+            <input type="checkbox" name="sintoma" id="DorC" value="DorC"/>
+            Dor de Cabeça
+        </label>
+        <label>
+            <input type="checkbox" name="sintoma" id="Vomi" value="Vomi"/>
+            Vômitos
+        </label>
+        <label>
+            <input type="checkbox" name="sintoma" id="Diar" value="Diar"/>
+            Diarréia
+        </label>
+        </div><div id="sintoma2">
+        <label>
+            <input type="checkbox" name="sintoma" id="Falt" value="Falt"/>
+            Falta de Ar
+        </label>
+        <label>
+            <input type="checkbox" name="sintoma" id="Febr" value="Febr"/>
+            Febre
+        </label>
+        <label>
+            <input type="checkbox" name="sintoma" id="DorMC" value="DorMC"/>
+            Dores Musculares
+        </label>
+        <label>
+            <input type="checkbox" name="sintoma" id="Fad" value="Fad"/>
+            Fadiga
+        </label>
+        <label>
+            <input type="checkbox" name="sintoma" id="cori" value="cori"/>
+            Coriza
+        </label>
+        </div>
+
+        <label for="consdia">Data desejada para a consulta*:</label>
+        <input type="date" name="consdia" id="consdia" class="input2" required />
+
+        <label for="conshora">Horário desejado*:</label>
+        <input type="time" name="conshora" id="conshora" class="input2" required/>
+
+        <label for="anot">Anotações adicionais:</label>
+        <input type="text" name="anot" id="anot" class="input2" placeholder="Ex:Preferência de médico,..."/>
+
+        <label for="termos" id="licenca">Aceito os termos de uso e política de privacidade*</label>
+        <input type="checkbox" name="termos" id="termos" required />
+        
+        </div>
+
+        <input type="submit" value="Enviar" class="btn-pesq" id="botao"/>
+    </form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=PT+Serif&family=Playfair+Display&display=swap');
+
+body {
+    display: grid;
+    background: rgb(174, 146, 207);
+    color: rgb(141, 113, 207);
+    margin: 0%;
+}
+
+.container{
+    width: calc(100vw - 110px);
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+header{
+    text-align: center;
+}
+
+.tab {
+    min-width: 220px;
+    border: 1px solid rgb(42, 42, 42);
+    height: 50px; 
+    font-weight: bold;
+    background: rgb(182, 152, 220);
+    font-family: 'Lora', serif;
+    font-size: 13px;
+}
+
+.wrapper{
+    background: linear-gradient(45deg, rgb(139, 216, 140) ,rgb(176, 224, 177), rgb(210, 232, 211));
+    width: 100%; height: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template: repeat(5, min-content) / 3fr 2fr;
+    gap: 8px;
+    border-radius: 5px;
+    overflow-x: hidden;
+    border: 3px solid rgb(87, 86, 86);
+}
+
+.wrapper input {
+    grid-column: 2 / 3;
+    padding: 8px;
+}
+
+.wrapper label {
+    grid-column: 1 / 2;
+    text-align: right;
+    padding: 8px 0;
+}
+
+.ativa{
+    border-radius: 10px 10px 10px 10px;
+    background: rgb(153, 201, 163);
+    margin: 5px 0;
+    box-shadow: 5px 5px 10px rgb(79, 116, 75);
+}
+
+.calcula-btn{
+    grid-column: 1 / 3;
+    height: 40px;
+    font-size: 20px;
+    background: rgb(190, 162, 224);
+    border: 2px solid rgb(96, 95, 95);
+    font-family: 'PT Serif', serif;
+    color: rgb(49, 49, 48);
+}   
+
+button{
+    margin: auto;
+    width: 150px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.calcula-btn:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+    border-radius: 25px 25px 25px 25px;
+}
+
+h1{
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+    font-family: 'Lora', serif;
+}
+
+label{
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+}
+
+input{
+    border: 2px solid rgb(77, 76, 76);
+    border-radius: 25px 25px 25px 25px;
+    background: rgb(164, 211, 170);
+    height: 20px;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    color: rgb(60, 59, 59);
+}
+
+input:focus{
+    box-shadow: 0px 0px 12px rgb(197, 139, 204);
+    background: rgb(204, 229, 218);
+}
+
+/*link*/
+
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#linkTopo{
+    transition: 0.5s;
+}
+
+#linkTopo:hover{
+    transition: 1s;
+    color: #ffffff;
+}
+
+/* footer */
+
+footer{
+    background-color: #7450d1;          /*#4a2d70;*/
+    text-align: center;
+    padding: 1%;
+    margin-top: 2%;
+}
+
+#caixaLink{
+    width: 150px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 1%;
+    margin: auto;
+}
+
+#caixaLink{
+    transition: 0.5s;
+}
+
+#caixaLink:hover{
+    transition: 1s;
+    background-color: #251b3f;
+}
