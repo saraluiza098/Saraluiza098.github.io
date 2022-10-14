@@ -20,6 +20,12 @@ body{
     text-align: center;
 }
 
+.link:hover {
+    font-weight: bold;
+    display: inline-block;
+    text-underline-position: under;
+    text-decoration-style: wavy;
+}
 
 #pag{
     color: white;
@@ -255,4 +261,5 @@ header{
     height: 50%;
     margin-left: 5px;
   }
+ 
  
