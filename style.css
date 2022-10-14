@@ -1,0 +1,258 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Poppins:wght@200&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ffffff;
+    background-image: url(../img/planodefundo.png);
+    background-size: cover;
+}
+
+.link{
+    text-decoration: none;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+
+#pag{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.cabecalho{
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#pag1:hover {
+    font-weight: bold;
+    display: inline-block;
+    text-decoration-style: wavy;
+    color: white;
+}
+
+#pag2:hover {
+    font-weight: bold;
+    display: inline-block;
+    text-underline-position: under;
+    text-decoration-style: wavy;
+    color: white;
+  
+}
+
+#pag1:visited{
+    color: white;  
+}
+
+#pag2:visited{
+    color: white;  
+}
+
+header{
+    background-color: #D2DEF1;
+    align-items: center;
+    border: none;
+    height: 100px;
+}
+
+#logoSara{
+    height: 80px;
+    align-self: center;
+    justify-self: center;
+    place-self: center;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#fotoSara{
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    border-radius: 30px;
+    margin-top: 150px;
+}
+
+#img1{
+    border: 3px solid black;
+    width: 20%;
+    margin-left: 40%;
+    box-shadow: 6px 6px 9px 2px #060808;
+    transition:0.4s;
+    border-radius: 16px 16px 16px 16px;
+}
+
+#img1:hover{
+    transition: 0.5s;
+    transform: scale(1.1); 
+}
+
+h1{
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Lora', serif;
+    font-family: 'Adamina', serif;
+}
+
+h3{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: 'Poppins', sans-serif;    
+}
+
+#pag1{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#pag2{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/*Projetos*/
+
+h2{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.wrapper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+  }
+  
+  .tab{
+    cursor: pointer;
+    padding:10px 20px;
+    margin:0px 2px;
+    background:#D2DEF1;
+    display:inline-block;
+    color:#081E3B;
+    border-radius:3px 3px 0px 0px;
+    box-shadow: 6px 6px 9px 2px #000000;
+  }
+  
+  .panels{
+    background:#ffffff;
+    box-shadow: 0 2rem 2rem #00000080;
+    min-height:200px;
+    width:100%;
+    max-width:1000px;
+    border-radius:3px;
+    overflow:hidden; 
+    margin-bottom: 30px;
+  }
+  
+  .panel{
+    display:none;
+    animation: fadein .8s;
+  }
+  
+  @keyframes fadein {
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
+  }
+  
+  .panel-title{
+    font-size:1.5em;
+    font-weight:bold
+  }
+  
+  .radio{
+    display:none;
+  }
+  
+  #one:checked ~ .panels #one-panel,
+  #two:checked ~ .panels #two-panel,
+  #three:checked ~ .panels #three-panel,
+  #four:checked ~ .panels #four-panel,
+  #five:checked ~ .panels #five-panel,
+  #six:checked ~ .panels #six-panel{
+    display:block
+  }
+  
+  #one:checked ~ .tabs #one-tab,
+  #two:checked ~ .tabs #two-tab,
+  #three:checked ~ .tabs #three-tab,
+  #four:checked ~ .tabs #four-tab,
+  #five:checked ~ .tabs #five-tab,
+  #six:checked ~ .tabs #six-tab{
+    background:#fffffff6;
+    color:#000;
+    border-top: 3px solid #000;
+  }
+   
+  div a{
+    display: block;
+  }
+  @media screen and (max-width: 1000px) {
+      .tabs{
+          display: grid;
+          grid-template-columns: 65% 40%;
+      }
+  
+      .tab{
+          margin: 5px;
+          display: flex;
+          align-items: center;
+      }
+      h1{
+        width: 100%;
+      }
+      .wrapper{
+        width: 90%;
+        margin-left: 20px;
+      }
+ 
+  #fotoSara{
+    width: 70%;
+    margin-left: 65px;
+    }  
+    
+header{
+    width: 100%;
+}
+  }
+  
+  iframe{
+      width: 1000px;
+      height: 500px;
+  }
+  
+  #panels{
+      height: 500px;
+      width: 1000px;
+  }
+
+  #projeto{
+    width: 5%;
+    height: 50%;
+    margin-left: 5px;
+  }
+ 
