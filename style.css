@@ -72,7 +72,7 @@ header{
     height: 100px;
 }
 
-#logoCamilly{
+#logoSara{
     height: 80px;
     align-self: center;
     justify-self: center;
@@ -87,7 +87,7 @@ header{
     justify-content: space-around;
 }
 
-#fotoCamilly{
+#fotoSara{
     height: 300px;
     width: 300px;
     margin: auto;
@@ -237,7 +237,7 @@ h2{
         margin-left: 20px;
       }
  
-  #fotoCamilly{
+  #fotoSara{
    width: 70%;
    margin-left: 65px;
     }  
