@@ -1,5 +1,3 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Adamina&family=Poppins:wght@200&display=swap');
 
 
@@ -10,13 +8,13 @@
 }
 body{
     background-color: #ffffff;
-    background-image: url(../img/planodefundo.png);
+    background-image: url(img/planodefundo.png) ;
     background-size: cover;
 }
 
 .link{
     text-decoration: none;
-    color: #000;
+    color: #000000;
     font-family: 'Poppins', sans-serif;
     text-align: center;
 }
@@ -55,7 +53,6 @@ body{
     text-underline-position: under;
     text-decoration-style: wavy;
     color: white;
-  
 }
 
 #pag1:visited{
@@ -78,6 +75,7 @@ header{
     align-self: center;
     justify-self: center;
     place-self: center;
+  
 }
 
 #container{
@@ -95,16 +93,16 @@ header{
     margin-top: 150px;
 }
 
-#img1{
+.img1{
     border: 3px solid black;
     width: 20%;
     margin-left: 40%;
-    box-shadow: 6px 6px 9px 2px #060808;
+    box-shadow: 6px 6px 9px 2px  #D2DEF1;
     transition:0.4s;
     border-radius: 16px 16px 16px 16px;
 }
 
-#img1:hover{
+.img1:hover{
     transition: 0.5s;
     transform: scale(1.1); 
 }
@@ -154,9 +152,9 @@ h2{
     cursor: pointer;
     padding:10px 10px;
     margin:0px 2px;
-    background:#D2DEF1;
+    background:#689B9D;
     display:inline-block;
-    color:#081E3B;
+    color:rgb(253, 251, 251);
     border-radius:3px 3px 0px 0px;
     box-shadow: 6px 6px 9px 2px #000000;
   }
@@ -168,7 +166,7 @@ h2{
     width:100%;
     max-width:1000px;
     border-radius:3px;
-    overflow:hidden; 
+    overflow:hidden;
     margin-bottom: 30px;
   }
   
@@ -212,13 +210,13 @@ h2{
   #six:checked ~ .tabs #six-tab{
     background:#fffffff6;
     color:#000;
-    border-top: 3px solid #000;
+    border-top: 3px solid #689B9D;
   }
-   
+  
   div a{
     display: block;
   }
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1000px)  {
       .tabs{
           display: grid;
           grid-template-columns: 65% 40%;
@@ -230,7 +228,7 @@ h2{
           align-items: center;
       }
       h1{
-        width: 100%;
+        width: 100%; 
       }
       .wrapper{
         width: 90%;
@@ -238,14 +236,14 @@ h2{
       }
  
   #fotoSara{
-    width: 70%;
-    margin-left: 65px;
+   width: 70%;
+   margin-left: 65px;
     }  
-    
+
 header{
-    width: 100%;
+        width: 100%;
+    }
 }
-  }
   
   iframe{
       width: 1000px;
@@ -262,4 +260,3 @@ header{
     height: 50%;
     margin-left: 5px;
   }
-
