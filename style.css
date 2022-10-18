@@ -160,7 +160,7 @@ h2{
   }
   
   .panels{
-    background:#black;
+    background:#ffffff;
     box-shadow: 0 2rem 2rem #00000080;
     min-height:200px;
     width:100%;
@@ -209,7 +209,7 @@ h2{
   #five:checked ~ .tabs #five-tab,
   #six:checked ~ .tabs #six-tab{
     background:#689B9D;
-    color:#000;
+    color:689B9D;
     border-top: 3px solid #689B9D;
   }
   
