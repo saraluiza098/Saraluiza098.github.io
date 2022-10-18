@@ -210,7 +210,7 @@ h2{
   #six:checked ~ .tabs #six-tab{
     background:#000000;
     color:#00000;
-    border-top: 3px solid #D2DEF1;
+    border-top: 3px solid #fffffff;
   }
   
   div a{
