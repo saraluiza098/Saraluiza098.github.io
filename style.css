@@ -208,9 +208,9 @@ h2{
   #four:checked ~ .tabs #four-tab,
   #five:checked ~ .tabs #five-tab,
   #six:checked ~ .tabs #six-tab{
-    background:#689B9D;
-    color:#689B9D;
-    border-top: 3px solid #689B9D;
+    background:#D2DEF1;
+    color:#D2DEF1;
+    border-top: 3px solid #D2DEF1;
   }
   
   div a{
