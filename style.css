@@ -209,7 +209,7 @@ h2{
   #five:checked ~ .tabs #five-tab,
   #six:checked ~ .tabs #six-tab{
     background:#689B9D;
-    color:689B9D;
+    color:#689B9D;
     border-top: 3px solid #689B9D;
   }
   
